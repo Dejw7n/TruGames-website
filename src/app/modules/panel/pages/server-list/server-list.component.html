@@ -1,0 +1,72 @@
+<div class="flex">
+	<div class="max-w-[240px] w-full h-screen px-5 py-6 bg-white"></div>
+	<div class="wrapper w-full">
+		<div class="">
+			<h1 class="text-3xl font-semibold">Servers</h1>
+		</div>
+		<div class="mt-16">
+			<div class="table table-even w-full">
+				<div class="table-row h-8">
+					<div class="table-cell"></div>
+					<div class="table-cell">
+						<p class="font-semibold">Server Name / Plan Name</p>
+					</div>
+					<div class="table-cell"></div>
+					<div class="table-cell"></div>
+				</div>
+				<div class="table-row h-20 bg-white" *ngFor="let fora of [0, 1, 2]">
+					<div class="table-cell relative w-20 px-4">
+						<div class="absolute grid h-20">
+							<div class="polygon w-12 h-12 my-auto bg-green-500"></div>
+						</div>
+					</div>
+					<div class="table-cell pr-4">
+						<div class="grid h-20">
+							<div class="my-auto">
+								<p class="font-semibold">SPSUL API</p>
+								<div class="flex">
+									<div class="grid w-4 h-4 my-auto rounded-full bg-blue-500">
+										<div class="w-1/2 h-1/2 m-auto rounded-full bg-white"></div>
+									</div>
+									<div class="ml-1">
+										<p class="text-gray-500">Professional Plan</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="table-cell pr-4">
+						<div class="grid h-20">
+							<div class="my-auto">
+								<p class="font-semibold">CPU</p>
+								<div class="flex">
+									<p class="text-gray-500">67%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="table-cell pr-4">
+						<div class="grid h-20">
+							<div class="my-auto">
+								<p class="font-semibold">RAM</p>
+								<div class="flex">
+									<p class="text-gray-500">67%</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="table-cell pr-4">
+						<div class="grid h-20">
+							<div class="my-auto">
+								<p class="font-semibold">STORAGE</p>
+								<div class="flex">
+									<p class="text-gray-500">12/24 GB</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
