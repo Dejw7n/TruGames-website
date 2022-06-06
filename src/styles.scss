@@ -1,1 +1,76 @@
-/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+	@font-face {
+		font-family: Overpass-Bold;
+		src: url("/assets/fonts/overpass/overpass-bold.otf") format("opentype");
+	}
+	@font-face {
+		font-family: Overpass-SemiBold;
+		src: url("/assets/fonts/overpass/overpass-semibold.otf") format("opentype");
+	}
+	@font-face {
+		font-family: Overpass-Regular;
+		src: url("/assets/fonts/overpass/overpass-regular.otf") format("opentype");
+	}
+}
+@layer components {
+	.wrapper {
+		padding-left: theme("spacing.8");
+		padding-right: theme("spacing.8");
+		padding-top: theme("spacing.5");
+		padding-bottom: theme("spacing.5");
+	}
+	.content-wrapper {
+		max-width: 1280px;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0 2.5rem;
+	}
+}
+@layer utilities {
+	.pt-full {
+		padding-top: 100%;
+	}
+	.filter-white {
+		filter: brightness(0) invert(1);
+	}
+	.filter-grayscale-1 {
+		filter: grayscale(1);
+	}
+	//table
+	.table {
+		display: table;
+	}
+	.table-row {
+		display: table-row;
+	}
+	.table-cell {
+		display: table-cell;
+	}
+	.table-even .table-row:nth-child(even) {
+		--tw-bg-opacity: 0.7;
+		background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+	}
+	//polygons
+	.polygon-triangle-down {
+		clip-path: polygon(50% 100%, 0 0, 100% 0);
+	}
+	.polygon-triangle-down-contract {
+		clip-path: polygon(0 0, 50% 100%, 100% 0, 100% 100%, 0 100%);
+	}
+	//background
+	.banner-background {
+		background: linear-gradient(90deg, #021048, #1e38a3);
+	}
+
+	//benchmark
+	.benchmark__bar {
+		background: linear-gradient(180deg, #007bfc, #05c1fe);
+	}
+	.benchmark__bar--value span {
+		color: #007bfc;
+	}
+}

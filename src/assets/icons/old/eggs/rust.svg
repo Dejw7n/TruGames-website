@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
+  <title>Rust-Icon</title>
+  <g>
+    <rect x="0.001" width="511.999" height="512" fill="#cd412b"/>
+    <g>
+      <polygon points="167.639 231.045 58.962 212.939 58.962 321.646 167.656 303.528 167.639 231.045" fill="#1e2020"/>
+      <rect x="185.772" y="231.056" width="36.231" height="72.471" fill="#1e2020"/>
+    </g>
+    <g>
+      <polygon points="303.539 167.639 321.646 58.962 212.939 58.962 231.056 167.656 303.539 167.639" fill="#1e2020"/>
+      <rect x="231.056" y="185.772" width="72.471" height="36.231" fill="#1e2020"/>
+    </g>
+    <rect x="249.177" y="249.176" width="36.231" height="36.231" transform="translate(-110.716 267.292) rotate(-45)" fill="#1e2020"/>
+    <g>
+      <polygon points="312.127 363.388 376.17 453.037 453.037 376.17 363.368 312.123 312.127 363.388" fill="#1e2020"/>
+      <rect x="275.89" y="294.01" width="72.471" height="36.231" transform="translate(-129.287 312.126) rotate(-45)" fill="#1e2020"/>
+    </g>
+  </g>
+</svg>
